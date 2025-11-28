@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Mercado Livre - Estrutura Básica</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+
+    <header>
+        <div class="top-bar">
+            <a href="#">
+                <img src="logo.png" alt="Logo Mercado Livre Clone">
+            </a>
+            <div class="user-actions">
+                <a href="#">Vender</a>
+                <a href="#">Ajuda</a>
+                <a href="#">Minha Conta</a>
+                <a href="#">Meu Carrinho</a>
+            </div>
+        </div>
+
+        <nav class="main-nav">
+            <div class="search-and-nav">
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="Buscar produtos, marcas e muito mais...">
+                    <button type="submit">Pesquisar</button>
+                </form>
+                <ul class="categories-menu">
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Ofertas do Dia</a></li>
+                    <li><a href="#">Histórico</a></li>
+                    <li><a href="#">Supermercado</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="promotional-banners">
+            <h2>Ofertas em Destaque</h2>
+            <div class="banner">
+                <img src="banner-principal.jpg" alt="Banner de Ofertas">
+                <p>carrossel de ofertas.</p>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <h2>Produtos Recomendados para você</h2>
+            <div class="product-list">
+                <article class="product-card">
+                    <img src="produto1.jpg" alt="Nome do Produto 1">
+                    <h3>Nome do Produto 1</h3>
+                    <p class="price">R$ 1991,99</p>
+                    <p class="shipping">Frete grátis</p>
+                    <button>Ver Detalhes</button>
+                </article>
+
+                <article class="product-card">
+                    <img src="produto2.jpg" alt="Nome do Produto 2">
+                    <h3>Nome do Produto 2</h3>
+                    <p class="price">R$ 49,90</p>
+                    <p class="shipping">Envio imediato</p>
+                    <button>Ver Detalhes</button>
+                </article>
+                
+                </div>
+        </section>
+
+        <section class="popular-categories">
+            <h2>Explore as Categorias</h2>
+            <ul>
+                <li><a href="#">Eletrônicos</a></li>
+                <li><a href="#">Moda</a></li>
+                <li><a href="#">Casa e Decoração</a></li>
+                <li><a href="#">Esportes</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <div class="col">
+                <h4>Sobre</h4>
+                <ul>
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Ajuda</h4>
+                <ul>
+                    <li><a href="#">Meus pedidos</a></li>
+                    <li><a href="#">Devoluções</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Clone do Mercado Livre. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

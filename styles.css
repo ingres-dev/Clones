@@ -1,0 +1,264 @@
+/* RESET B�SICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5; /* Fundo cinza claro */
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #3483fa; /* Azul padr�o do Mercado Livre para links */
+}
+
+/* 1. CABE�ALHO (Header) */
+header {
+    background-color: #ffe600; /* Amarelo principal */
+    padding: 10px 0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+.top-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.top-bar img {
+    /* Simula��o da logo */
+    width: 130px; 
+    height: auto;
+    background-color: #333; /* Apenas para visualizar o espa�o da logo */
+}
+
+.user-actions a {
+    color: #333;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* 2. BARRA DE PESQUISA E NAVEGA��O */
+.main-nav {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.search-and-nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.search-and-nav form {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.search-and-nav input[type="text"] {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.search-and-nav button {
+    background-color: #3483fa;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: -5px; /* Sobrepor um pouco a borda do input */
+}
+
+.categories-menu {
+    list-style: none;
+    display: flex;
+}
+
+.categories-menu li a {
+    color: #666;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+
+/* 3. CONTE�DO PRINCIPAL (Main) */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* 3.1. Banners */
+.promotional-banners h2 {
+    display: none; /* Esconder o t�tulo h2 */
+}
+
+.banner {
+    background-color: #eee;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.banner img {
+    /* Imagem de banner ocupando 100% (exemplo, precisaria de uma imagem real) */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+.banner p {
+    position: absolute;
+    color: #333;
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/* 3.2. Grid de Produtos */
+.product-grid h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 4 ou mais colunas dependendo do espa�o */
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.product-card .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card .shipping {
+    color: #00a650; /* Verde */
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.product-card button {
+    background-color: #3483fa;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.product-card button:hover {
+    background-color: #2968c8;
+}
+
+/* 3.3. Categorias Populares */
+.popular-categories {
+    margin-top: 40px;
+}
+.popular-categories ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.1);
+}
+.popular-categories a {
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* 4. RODAP� (Footer) */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #eee;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-links {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.copyright p {
+    color: #999;
+    font-size: 12px;
+}
